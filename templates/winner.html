@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Over</title>
+    <title>{{winner}} wins!</title>
 </head>
 <body>
+    <h2>Game Results:</h2>
     {% if winner == "Draw" %}
-    <span>Draw!</span>
-     { % else % }
-     <span>The winner is winner</span>
+    <h3>Draw!</h3>
+    { % else % }
+     <h3>The winner is winner</h3></span>
     {% endif %}
+    <h2>The winner is {{winner}}!</h2>
 </body>
 </html>

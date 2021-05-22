@@ -1,5 +1,6 @@
 from classes.player import Player
 from classes import *
+import random
 
 class Game:
     def __init__(self, name):
@@ -22,4 +23,8 @@ class Game:
         elif player1choice == "paper" and player2choice == "scissors":
             return player2
         elif player1choice == player2choice:
-            return None
+            return "Draw"
+
+    def get_computer_choice(self):
+        availableChoice = ["rock", "paper", "scissors"]
+        return random.choice(availableChoice)
