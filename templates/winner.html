@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {%if (winner == "draw") : %}
+    <title>Draw!</title>
+    { else }
     <title>{{winner}} wins!</title>
+    {% endif %}
 </head>
 <body>
     <h2>Game Results:</h2>
-    {% if winner == "Draw" %}
-    <h3>Draw!</h3>
-    { % else % }
-     <h3>The winner is winner</h3></span>
-    {% endif %}
-    <h2>The winner is {{winner}}!</h2>
+    <h3>The winner is {{winner}}</h3>
 </body>
 </html>
+{#
+<!-- 
+{% if {{winner}} == "Draw" %}
+<h3>Draw!</h3>
+{ % else % }
+ <h3>The winner is {{winner}}</h3></span>
+{% endif %} --> #}
