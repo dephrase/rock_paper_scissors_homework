@@ -1,3 +1,28 @@
 h3 {
     text-align: center;
 }
+
+.player-vs-player-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.playerinfo {
+    width: 250px;
+    height: 50px;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    border: black;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.choicespacing {
+    padding-top: 10px;
+}
