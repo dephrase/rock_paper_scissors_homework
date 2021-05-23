@@ -11,13 +11,17 @@
     <div class="user-input-section">
         <h3>Play Rock Paper Scissors</h3>
         <form action="/winner-computer" method="post">
+        <div class="container">
+        <div class="playerinfocomputer">
         <label for="player1name">Player 1 Name: </label>
         <input type="text" name="player1name" id="player1name">
-        <br>
-        <label for="player1choice">Rock, Paper or Scissors: </label>
+        <label for="player1choice" class="choicespacing">Rock, Paper or Scissors: </label>
         <input type="text" name="player1choice" id="player1choice">
-        <br>
-        <input type="submit" value="Go!">
+        </div>
+        </div>
+        <div class="gobutton">
+        <input type="submit" value="Go!" class="gobuttonstyle">
+        </div>
         </form>
     </div>
 </body>
