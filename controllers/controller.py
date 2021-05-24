@@ -21,7 +21,7 @@ def play_against_computer():
 
 @app.route('/winner/<winner>')
 def display_result(winner):
-    return render_template('winner.html', title="Result", winner=winner)
+    return render_template('winner.html', winner=winner)
     
 @app.route('/winner', methods=['GET', 'POST'])
 def add_winner_to_page():
