@@ -54,3 +54,5 @@ def get_computer_winner():
     else:
         winner = result.name
     return redirect(url_for('display_result', winner=winner))
+
+    # test
